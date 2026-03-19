@@ -3,7 +3,7 @@ using System.IO;
 class Program
 {
     static void Main(string[] args)
-{
+    {
         Journal journal = new Journal();
 
         Console.WriteLine("Welcome to Your Daily Journal!");
@@ -49,3 +49,8 @@ class Program
         }
     }
 }
+
+//Exceeding requirements by adding more prompts for variety so journaling is more interesting and does not get boring after a few entries
+//Exceeding requirements by mkaing the user input the date, this is to help catchup on past days where user forgot to journal,
+//but this way can catch up by putting past dates, as far as the user can remember
+//Exceeding requirements by catching error when trying to load from unrecognized file

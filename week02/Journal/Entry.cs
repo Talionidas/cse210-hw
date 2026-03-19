@@ -7,8 +7,8 @@ public string Content {get;}
 
 public Entry (string dateInput, string content)
 {
-DateCreated = dateInput;
-Content = content;
+    DateCreated = dateInput;
+    Content = content;
 }
 
     public void DisplayEntry()

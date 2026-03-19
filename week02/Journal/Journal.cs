@@ -20,6 +20,10 @@ public PromptGenerator promptGenerator;
         Console.WriteLine($"Today's Prompt: {prompt}");
         Console.Write("> ");
         string content = Console.ReadLine();
+        Entry newEntry = new Entry(dateInput, content);
+        entries.Add(newEntry);
+        
+        //Console.WriteLine(entries.Count);
     }
 
     public void DisplayEntries() 
