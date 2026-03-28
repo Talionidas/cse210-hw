@@ -24,13 +24,13 @@ public class Scripture
         return Words.All(w => w.IsHidden);
     }
 
-    public void HideRandomWords()
+    public int HideRandomWords()
     {
         Random random = new Random();
 
         var visibleWords = Words.Where(w => !w.IsHidden).ToList();
         if (visibleWords.Count == 0)
-            return;
+            return 0;
 
         int wordsToHide = random.Next(1, visibleWords.Count / 4 + 1);
 
@@ -44,5 +44,7 @@ public class Scripture
                 hiddenCount++;
             }
         }
+
+    return hiddenCount;
     }
 }

@@ -11,7 +11,7 @@ public class Word
 
     public override string ToString()
     {
-        return IsHidden ? "____" : Text;
+        return IsHidden ? new string('_', Text.Length) : Text;
 
     }
 }
